@@ -457,18 +457,16 @@ def createOrderedModel(content):
     return sorted(trigrams.keys(), key=lambda k: (-trigrams[k], k))
 
 
-spRe = re.compile(r"\s\s", re.UNICODE)
 MAXGRAMS = 300
 
 def distance(model, knownModel):
     dist = 0
 
     for i, value in enumerate(model[:MAXGRAMS]):
-        if not spRe.search(value):
-            if value in knownModel:
-                dist += abs(i - knownModel[value])
-            else:
-                dist += MAXGRAMS
+        if value in knownModel:
+            dist += abs(i - knownModel[value])
+        else:
+            dist += MAXGRAMS
 
     return dist
 
