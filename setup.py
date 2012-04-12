@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='guess-language',
-    version = '0.2.1-squirro',
+    version = '0.2-squirro',
     description = 'Guess the natural language of a text',
     license = 'LGPL',
     platforms = ['any'],
