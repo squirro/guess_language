@@ -1,0 +1,33 @@
+# Python
+*.pyc
+*.egg-info/
+
+# DB Files
+*.db
+
+# Build and tests
+build/
+./dist/
+*.egg
+.noseids
+target/
+.coverage
+docs/_build/
+
+# Sourcer integration test output files
+output.json
+output.diff
+
+# OS
+.*.swp
+.DS_Store
+
+# IDEs and other wild stuff. Add whatever you generate locally here
+.project
+.pydevproject
+.settings
+.tmtags
+tags
+.idea
+winrun.py
+tools/pneff
