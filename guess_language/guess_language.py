@@ -368,7 +368,7 @@ def find_runs(text):
     relevant_runs = []
     for key, value in run_types.items():
         pct = (value * 100) / totalCount
-        if pct >= 0:
+        if pct >= 40:
             relevant_runs.append(key)
         elif key == "Basic Latin" and (pct >= 1):
             relevant_runs.append(key)
